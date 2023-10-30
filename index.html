@@ -5,11 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FED Dev Blog 2023</title>
+    <link rel="stylesheet" href="stylesheet.css" />
   </head>
   <body>
-    <div>
+    <nav>
+      <ul>
+        <li><a href="#week01">Week 01</a></li>
+        <li><a href="#week02">Week 02</a></li>
+        <li><a href="#week03">Week 03</a></li>
+      </ul>
+    </nav>
+    <article id="week01">
       <h1>Week 01</h1>
-      <h4>In this week, we learnt various html elements:</h4>
+      <h3>In this week, we learnt various html elements:</h3>
       <ul>
         <li>html - Defines the root of an HTML document</li>
         <li>head - Contains metadata/information for the document</li>
@@ -36,16 +44,16 @@
         </li>
         <li>iframe - defines an inline frame</li>
       </ul>
-      <h5 class="homework">Homework for the week:</h5>
+      <h4 class="homework">Homework for the week:</h4>
       <ol>
         <li>my recipe card</li>
         <li>group discussion - what makes a good website</li>
       </ol>
-    </div>
-    <div>
+    </article>
+    <article id="week02">
       <h1>Week 02</h1>
-      <h4>In this week, we learnt</h4>
-      <h5>1. semantic html elements:</h5>
+      <h3>In this week, we learnt</h3>
+      <h4>1. semantic html elements:</h4>
       <ul>
         <li>
           header - represents a container for introductory content or a set of
@@ -75,7 +83,7 @@
         <li>mark - Defines marked/highlighted text</li>
         <li>main - Specifies the main content of a document</li>
       </ul>
-      <h5>2. css:</h5>
+      <h4>2. css:</h4>
       <ul>
         <li>
           CSS - 3 ways to include styles in HTML
@@ -92,13 +100,114 @@
         <li>External font</li>
       </ul>
 
-      <h5 class="homework">Homework for the week:</h5>
+      <h4 class="homework">Homework for the week:</h4>
       <ol>
-        <li>CA1, CA2 - slide 15 : semantic markup</li>
-        <li>CA3 - slide 34 - CSS</li>
-        <li>CA4 - slide 56 : CSS - id and class</li>
-        <li>CA5 - slide 57 : CSS - google fonts</li>
+        <li>CA1, CA1-optional - slide 17 : semantic markup</li>
+        <li>CA2 - slide 37 - Dev Blog with CSS</li>
+        <li>CA3 - slide 60 : CSS - id and class</li>
+        <li>CA4 - slide 61 : CSS - google fonts</li>
       </ol>
-    </div>
+    </article>
+    <article id="week03">
+      <h1>Week 03</h1>
+      <h3>In this week, we learnt</h3>
+      <h4>1. Form element – to create an HTML form for user input</h4>
+      <ul>
+        <li>
+          Input element: for user input, display in many ways, depending on the
+          type attribute (text, radio (use same name for same group), checkbox,
+          email, password, date, time, file, submit, button, etc)
+        </li>
+        <li>Label element: defines a label for the form elements</li>
+        <li>
+          Select element: defines a drop-down list (use together with option
+          elements that define the option within the drop-down list)
+        </li>
+        <li>
+          Textarea element: defines a multi-line input field (row and column
+          attributes to specify the visible number of lines and width in a text
+          area)
+        </li>
+        <li>Button element: defines a clickable button</li>
+      </ul>
+      <h4>2. CSS Selectors</h4>
+      <ul>
+        <li>Simple selectors (select elements based on name, id, class)</li>
+        <li>
+          Combinator selectors (select elements based on a specific relationship
+          between them)
+        </li>
+        <li>
+          Pseudo-class selectors (select elements based on a certain state)
+        </li>
+        <li>
+          Pseudo-elements selectors (select and style a part of an element)
+        </li>
+        <li>
+          Attribute selectors (select elements based on an attribute or
+          attribute value)
+        </li>
+      </ul>
+      <h4>3. Inheritance, specificity, cascading, !important</h4>
+      <h4>4. Box Model</h4>
+      <p>content -> padding -> border -> margin</p>
+      <p style="color: red">
+        Normalize - a great reset sccript to include (use the link
+        https://necolas.github.io/normalize.css/)
+      </p>
+      <h4>5. Media Queries</h4>
+      <p>for small device: @mdeia (min-width: 576px) { <em>css rule</em>}</p>
+
+      <h4>6. Positioning</h4>
+      <ul>
+        <li>position: relative, absolute, fixed</li>
+        <li>
+          z-index (work ONLY on elements with a position property set to
+          absolute, fixed, or relative)
+        </li>
+        <li>
+          An element with a higher z-index value overlaps an element with a
+          lower z-index value.
+        </li>
+        <li>Positioned elements have a z-index of 0 by default.</li>
+      </ul>
+      <h4>7. Flexbox</h4>
+      <p>
+        To start using the Flexbox model, you need to first define a flex
+        container by setting the display property to flex
+      </p>
+      <p>The flex container properties are:</p>
+      <ul>
+        <li>
+          flex-direction - defines the direction that the container stacks the
+          flex items (row, row-reverse, column, column-reverse)
+        </li>
+        <li>
+          flex-wrap - specifies whether the flex items should wrap or not (wrap,
+          nowrap – default, wrap-reverse)
+        </li>
+        <li>
+          flex-flow - shorthand for setting both flex-direction and flex-wrap
+        </li>
+        <li>
+          justify-content - used to align the flex items (center, flex-start –
+          default, flex-end, space-around, space-between)
+        </li>
+        <li>
+          align-items - used to align the flex items (center, flex-start,
+          flex-end, stretch, baseline)
+        </li>
+        <li>align-content - used to align the flex lines.</li>
+      </ul>
+      <h4>8. Wireframes</h4>
+      <ul></ul>
+      <h4 class="homework">Homework for the week:</h4>
+      <ol>
+        <li>CA1 - Forms</li>
+        <li>CA2 - Z-index</li>
+        <li>CA3 - Flexboxes</li>
+        <li>CA4 - Online Newsletter</li>
+      </ol>
+    </article>
   </body>
 </html>
