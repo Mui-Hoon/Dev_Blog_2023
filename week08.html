@@ -23,7 +23,7 @@
           We can use the data attribute to allow custom information to be added
           on to our HTML
         </li>
-        <li>created using data-&lt;custom name&gt;</li>
+        <li>Created using data-&lt;custom name&gt;</li>
         <li>
           By using data attributes, we can use it to define variables for
           ourselves. Based on those “variable” settings, we can use it to
@@ -32,14 +32,57 @@
       </ul>
       <h3 class="topic">API</h3>
       <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>
+          AJAX (<b>A</b>synchronous <b>J</b>avaScript <b>A</b>nd <b>X</b>ML) is
+          a technique for loading data into part of a page without having to
+          refresh the entire page. The data is often sent in a format called
+          JavaScript Object Notation (or JSON)
+        </li>
+        <li>How AJAX Works</li>
+        <ul>
+          <li>
+            Create an XMLHttpRequest <br />
+            <small>let XHR = new XMLHttpRequest()</small>
+          </li>
+          <li>
+            Create a callback function<br />
+            <small>
+              <pre>
+XHR.onreadystatechange = function(){ 
+    if (XHR.readyState == 4 && XHR.status == 200){ 
+        console.log(XHR.responseText); 
+    } 
+};</pre
+              >
+            </small>
+          </li>
+          <li>
+            Open a request<br />
+            <small>XHR.open("GET", "https://api.github.com/zen"); </small>
+          </li>
+          <li>
+            Send the request<br />
+            <small>XHR.send(); </small>
+          </li>
+        </ul>
+        <li>
+          Using fetch()<br />
+          <pre>
+  fetch(url) 
+  .then(function(res){ console.log(res); })
+  .catch(function(error){ console.log(error); })</pre
+          >
+        </li>
+
+        <ul></ul>
       </ul>
 
       <h4 class="homework">Homework for the week:</h4>
       <ol>
+        <li>
+          Download and install POSTMAN - Create a GET request to
+          https://ipapi.co/json to retrieve your IP address + location
+        </li>
         <li>Random user (API - slide 41)</li>
         <li>Mini Weather (API - slide 46)</li>
       </ol>
